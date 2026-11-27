@@ -34,6 +34,10 @@ python3 -m http.server 8000
 
 然后打开 [简体中文](http://localhost:8000/) 或 [English](http://localhost:8000/en/)。
 
+## 关于作者
+
+我是 Ruofeng Wang，这个工具由我改编和维护。欢迎[在 X 上关注 @oneruofeng](https://x.com/oneruofeng)，也可以告诉我你想用什么纸型。项目采用 [CC0 1.0](LICENSE)。
+
 ## 部署与来源
 
 Cloudflare Pages 从 `main` 分支自动部署，静态输出目录为仓库根目录，无需构建命令。
