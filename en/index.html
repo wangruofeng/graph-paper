@@ -3,9 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Graph Paper Studio</title>
-<meta name="description" content="Choose a paper type, customize the layout, and export it for printing.">
-<link rel="alternate" hreflang="zh-CN" href="../index.html">
+<title>Graph Paper Studio | Printable Grid, Dot &amp; Engineering Paper</title>
+<meta name="description" content="Create printable graph paper from 78 templates, including square grids, dot grids, hex paper, music staves, and Cornell notes. Customize spacing and page size, then export PDF, SVG, or PNG.">
+<link rel="canonical" href="https://graphpaper.wangruofeng007.com/en/">
+<link rel="alternate" hreflang="zh-CN" href="https://graphpaper.wangruofeng007.com/">
+<link rel="alternate" hreflang="en" href="https://graphpaper.wangruofeng007.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://graphpaper.wangruofeng007.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Graph Paper Studio">
+<meta property="og:title" content="Graph Paper Studio | Printable Grid, Dot &amp; Engineering Paper">
+<meta property="og:description" content="Create printable graph paper from 78 templates, including square grids, dot grids, hex paper, music staves, and Cornell notes. Customize spacing and page size, then export PDF, SVG, or PNG.">
+<meta property="og:url" content="https://graphpaper.wangruofeng007.com/en/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Graph Paper Studio | Printable Grid, Dot &amp; Engineering Paper">
+<meta name="twitter:description" content="Create printable graph paper from 78 templates, including square grids, dot grids, hex paper, music staves, and Cornell notes. Customize spacing and page size, then export PDF, SVG, or PNG.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M8 0v32M16 0v32M24 0v32M0 8h32M0 16h32M0 24h32' stroke='%23235b45' stroke-width='1.5'/%3E%3C/svg%3E">
 <style>
   :root {
@@ -4647,6 +4660,7 @@ logspiral: [
   };
   const PREFS_KEY = "gpAppPrefs";
   const PREVIEW_MAX = 40000;
+  const HOME_TITLE = document.title;
 
   let current = null; // active generator
 
@@ -4866,7 +4880,7 @@ logspiral: [
   function showHome() {
     current = null;
     $("hero").hidden = false;
-    document.title = "Graph Paper Studio";
+    document.title = HOME_TITLE;
     $("gen").style.display = "none";
     const home = $("home");
     home.style.display = "block";
